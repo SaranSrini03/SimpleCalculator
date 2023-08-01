@@ -1,0 +1,101 @@
+*,*::before,*::after{
+    font-family: 'futura';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to left ,#000000,#000000);
+}
+.topContainer{
+    height: 60px;
+    margin-bottom: 4vw;
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+.topContainer > p{
+    padding: 1.5vh;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+    /* text-shadow: 0 0 10px rgb(60, 0, 255); */
+    animation: glow;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.outputScreen{
+    display:block;
+    width: 280px;
+    min-height: 105px;
+    height: auto;
+    background-color: rgba(0,0,0,.7);
+    align-items: flex-end;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 4px solid black;
+    padding: 10px;
+    box-shadow: 10px 15px 3px #00000033;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid white;
+    
+}
+#previous{
+    text-align: right;
+    color: rgba(255,255,255,.4);
+    font-size: 20px;
+}
+#current{
+    text-align: right;
+    color: white;
+    font-size: 40px;
+}
+.buttonContainer{
+    width: 280px;
+    height: 350px;
+    background:linear-gradient(250deg,#1b1b24,#15151dc9);
+    /* box-shadow: 10px 15px rgba(0,0,0,.2); */
+    box-shadow: 10px 15px 3px rgba(5,5,5,.2);
+    /* margin-left: 40; */
+    margin: 0 auto;
+    border-radius: 0 0 50px 50px;
+    padding: 10px 0px 0px 20px;
+}
+.buttonContainer button{
+    margin: 4px;
+    outline: none;
+    background-color: #15151c;
+    color: white;
+    font-size: 25px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+#equalto{
+    width: 110px;
+}
+#AC{
+    width: 110px;
+}
+.buttonContainer button:hover{
+    background-color: rgba(0,0,0,.5);
+    background-color: rgba(255,255,255,.1);
+}
+@keyframes glow {
+    from{
+        text-shadow: 0 0 10px rgb(146, 0, 243)
+    }
+
+    to{
+        text-shadow: 0 0 10px rgb(0, 4, 255);
+    }
+
+}
